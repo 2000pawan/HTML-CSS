@@ -1,0 +1,1487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise</title>
+    <base href="https://www.w3resource.com/">
+</head>
+<body>
+    <h2>Audio in HTML</h2>
+    <audio controls>
+        <!-- <audio controls and after this we can use loop,muted,controls='controls' autoplay
+        preload='auto' function in audio tag -->
+        <source src="https://www.w3resource.com/html-css-exercise/basic/beach.ogg"type="audio/ogg">
+    </audio>
+</body>
+<body>
+    <h2>
+        Comment in HTML
+    </h2>
+    <p>
+        HTML Tutorial
+    </p>
+    <!--<p>Python Tutorial</p>-->
+    <p>
+        PHP Tutorial
+    </p>
+    <br>
+    <h2>Hyperlink in HTML</h2>
+    <a href="https://mrs-pawanyadav.streamlit.app" target='_blank'>hyperlink Movie Recommended System </a>
+    <br>
+    <a href="https://www.w3resource.com/images/w3resource-logo.png" download>Download</a>
+    <br>
+    <a href="https://w3resource.com" hreflang="en">language in hyperlink</a>
+    <br>
+    <a href="#bottom">Go to bottom</a>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit maiores reiciendis ipsum quis laborum doloremque. In ad aliquam quos voluptatum laudantium, natus dicta laborum ex magnam fugit quae hic tenetur!</p>
+    <p id="bottom">
+        Bottom
+    </p>
+    <a href="https://www.w3resource.com" media="print,handheld">Media Attribute</a>
+    <br>
+    <a rel="nofollow" href="https://www.w3resource.com" >NoFollow Link</a>
+    <br><br>
+    <a href="https://www.w3resource.com" target="_blank">Target Html tag</a>
+    <br>
+    <a href="https://www.w3resource.com" media="screen">Media attribute coorect value</a>
+    <br>
+    <h2>Abbrevation or an acronym in HTML</h2>
+    <abbr title="Uniform Resource Locator">
+        URL
+    </abbr>
+    Stand for Uniform Resource Locator
+    <br>
+    <h2>Address in HTML</h2>
+    <address>
+        Address: 154,Shri Krishna Yaduvanshi House<br>
+        Chotpur Colony Sector-63<br>
+        Noida Gautam buddha nagar up.
+        <a href="https://www.google.co.in/maps/place/Shri+Krishna+YADUVANSHI+HOUSE/@28.6243528,77.3999178,17z/data=!3m1!4b1!4m6!3m5!1s0x390cefb80ce08ec3:0x5cceb7c5c096078d!8m2!3d28.6243528!4d77.4024927!16s%2Fg%2F11h51cj2ss?entry=ttu" target="_blank">Location</a>
+    </address>
+    <br>
+    <h2>Area in HTML</h2>
+    <img src="https://www.w3resource.com/html/area/html-area-element.png" alt="area example " width="308" height="190" usemap="#Map"> 
+    <map name="Map">
+    <area shape="rect" coords="8,5,100,77" href="https://www.w3resource.com/mysql/mysql-tutorials.php" target="_blank" alt="MySQL Tutorial" rel="alternate">
+    <area shape="circle" coords="155,93,59" href="https://www.w3resource.com/php/php-home.php" target="_blank" alt="PHP Tutorial" hreflang="en" type="text/html">
+    <area shape="rect" coords="197,136,306,188" href="https://www.w3resource.com/sql/sql-tutorials.php" media="print handheld" target="_blank" alt="SQL Tutorial" download>
+    </map> 
+    <br>
+    <h2>Article in HTML</h2>
+    <article>
+        <h1>
+            Tutorial of Html5 article element
+        </h1>
+        <p>
+            Html5 article element represent independent item like a blog entry in an web document.
+        </p>
+    </article>
+    <br>
+    <h2>Aside in HTML</h2>
+    <aside>
+        <h4>
+            HTML5 tutorial
+        </h4>
+        <p>
+            I can develop excellent web applications with HTML5 and related APIs
+            (like GeoLocation, Drag and Drop, WebSocket etc.)in HTML5 tutorial.
+        </p>
+    </aside>
+    <br>
+    <h2>Bold Text in HTML</h2>
+    <p>
+        Pawan Yadav "Data Sciencist" and 
+        <b>"Ai Engineer"</b>
+        <strong>"ML Engineer!"</strong>
+    </p>
+    <br>
+    <h2>Base in HTML</h2>
+    <!-- <base> tag use in under <head> tag -->
+        <ul>
+            <li><a href="php/php-home.php">PHP Tutorial</a> </li>
+            <li><a href="javascript/javascript.php">Javascript Tutorial</a> </li>
+            <li><a href="mysql/mysql-tutorials.php">MySQL Tutorial</a> </li>
+        </ul>
+    <br>
+    <h2>BDI(Bi-Directional Isolation) in HTML</h2>
+        <p>
+            The bdi element in HTML stands for "Bi-Directional Isolation." It is used to isolate a span of text that might be formatted in a different direction from other text outside it, such as text in a different language or with a different base directionality.
+        </p>
+        <p>
+            In the example below, usernames are shown along with the number of points in a contest.
+            If the bdi element is not supported in the browser, the username of the Arabic user would confuse the text (the bidirectional algorithm would put the colon and the number "80" next to the word "User" rather than next to the word "points").
+        </p>
+            <ul>
+             <li>User <bdi>hrefs</bdi>: 40 points</li>
+             <li>User <bdi>jdoe</bdi>: 60 points</li>
+             <li>User <bdi>ترحيب</bdi>:80 points</li>
+            </ul>
+        <p>
+            <b>Note:</b> The bdi element is currently supported only in Firefox and Chrome.
+        </p>
+    <br>
+    <h2>BDO(Bi-Directional Override) in HTML</h2>
+        <p>
+            The bdo element in HTML stands for "Bi-Directional Override." It is used to explicitly override the bidirectional algorithm for a specific span of text. The bidirectional algorithm is responsible for handling the directionality of text in a mixed-script environment where text can be in left-to-right (LTR) or right-to-left (RTL) scripts.
+        </p>
+        <p dir="ltr">
+            This text is in left to right direction.
+        </p>
+        <p dir="ltr">
+            <span id="'result_box" lang="iw">
+                <span title="">טקסט זה בשטחים השמאלי בכיוון הנכון 
+                </span>
+            </span>
+        </p>
+    <br>
+    <h2>Blockquote in HTML</h2>
+    <blockquote>
+        Freedom is not worth if it does not connote freedom to err.
+        IT passes my comprehension how human beings, be they ever so experienced and able, can delight in depriving other human beings of that precious right.
+    </blockquote>
+    <br>
+    <h2>Break tag in HTML</h2>
+    <p>
+        The quick brown fox jumps<br>over the lazy dog.
+    </p>
+    <br>
+    <h2>Button in HTML</h2>
+    <button type="button" onclick="console.log('Welcome')" >Click me!</button><br><br>
+    <button type="button" autofocus onclick="console.log('Welcome')" >Click me!</button><br><br>
+    <form action="example.php" method="post">
+        First Name : <input type="text" name="Fname"><br>
+        <button type="button" name="Submit" disabled>Submit</button>
+    </form><br><br>
+    <form method="POST" action="https://www.w3resource.com/html-css-exercise/basic/solution/button-form-answer-demo.php" id="form1">
+        First   name  : <input type="text" name="fname"><br>
+        Last    name : <input type="text" name="lname"><br>
+        Present Address : <input type="text" name="add"><br>
+        E-mail  : <input type="text" name="mail"><br>
+    </form>
+    <button type="submit" form="form1" value="Submit">Submit</button><br><br>
+    <form action="https://www.w3resource.com/html-css-exercise/basic/solution
+    button-formaction-answer-demo.php" method="post">
+    First name: <input type="text" name="fname"><br>
+    Last name: <input type="text" name="lname"><br>
+    <button type="submit">Submit</button><br>
+    <button type="submit" formaction="https://www.w3resource.com/html-css-exercise/basic/solution/button-formaction-admin-demo.php">Submit as admin</button></form>
+    <br><br>
+    <form action="https://www.w3resource.com/html-css-exercise/basic/solution
+    button-formenctype.php" method="post">
+        name: <input type="text" name="name">   email: <input type="email" name="email"> <button name="Submit" type="submit" formenctype="text/plain">Submit</button>
+        </form>
+        <!-- note that though enctype attribute is not explicitly mentioned in the form tag,
+        which takes default value  "application/x-www-form-urlencoded", since formenctype="text/plain"
+        is explicitly specified in the button (of type="submit"), in the php associated PHP file
+        content/type of form data is shown as "text/plain"--><br>
+    <form action="https://www.w3resource.com/html-css-exercise/basic/solution/button-formmethod-answer-demo.php">
+            First name: <input type="text" name="fname"><br>
+            Last name: <input type="text" name="lname"><br>
+            Address: <input type="text" name="place"><br>
+            <button type="submit">Submit</button>
+            <button type="submit" formmethod="post" formaction="http://localhost/html-css-exercise/basic/solution/button-formmethod-post-answer.php">Submit using POST</button>
+    </form><br>
+    <form action="https://www.w3resource.com/html-css-exercise/basic/solution/button-formnovalidate-answer-demo.php" method="post">
+        E-mail: <input type="text" name="email"><br>
+        <button type="submit">Submit</button><br>
+        <button type="submit" formnovalidate>Submit without validation</button>
+    </form><br><br>
+    <form action="https://www.w3resource.com/html-css-exercise/basic/solution/button-formtarget-answer-demo.php" method="POST">
+        First name: <input type="text" name="fname"><br>
+        Last name: <input type="text" name="lname"><br>
+        <button type="submit">Submit</button>
+        <button type="submit" formtarget="_blank">Submit to a new window/tab</button>
+    </form><br>
+    <form action="https://www.w3resource.com/html-css-exercise/basic/solution/button-name-answer-demo.php" method="post">
+        Choose your favorite topic:
+        <button name="topic" type="submit" value="JavaScript">JavaScript</button>
+        <button name="topic" type="submit" value="PHP">PHP</button>
+    </form><br>
+    <form action="https://www.w3resource.com/html-css-exercise/basic/solution/button-value-answer-demo.php" method="post">
+        Choose your favorite game:
+        <button name="game" type="submit" value="cricket">cricket</button>
+        <button name="game" type="submit" value="football">football</button>
+    </form><br>
+    <form action="https://www.w3resource.com/html-css-exercise/basic/solution/button-type-answer-demo.php" method="post"id="nameform">
+        First name: <input type="text" name="fname"><br>
+        Last name: <input type="text" name="lname"><br>
+        Address: <input type="text" name="add"><br> 
+        <button type="submit" value="Submit">Submit</button>
+        <button type="reset" value="Reset">Reset</button>
+    </form><br>
+    <h2>Canvas in HTML</h2>
+    Canvas
+    <style>
+        #FirstCanvas{
+            width: 500px;
+            height: 300px;
+            border: 3px solid red;
+            background-color: blue;
+        }
+    </style>
+    <body>
+        <canvas id="FirstCanvas"></canvas>
+    <br>
+    Canvas
+    <style>
+       #SecondCanvas{
+           width: 500px;
+           height: 300px;
+           border: 3px solid red;
+           background-color: green;
+       }
+    </style>
+    <body>
+        <canvas id="SecondCanvas"></canvas>
+    <br>
+    Canvas
+    <style>
+        #ThirdCanvas{
+            width: 500px;
+            height: 300px;
+            border: 3px solid red;
+            background-color: orange;
+        }
+    </style>
+    <body>
+        <canvas id="ThirdCanvas"></canvas>
+    <br>
+    <h2>Caption in HTML</h2>
+    <table border="1">
+        <caption>
+            First Column holds student code and second column holds percentage of marks obtained by the student.
+        </caption>
+        <tr>
+            <th>
+                Student Code
+            </th>
+            <th>
+                % of Marks
+            </th>
+        </tr>
+        <tr>
+            <td>
+                S001
+            </td>
+            <td>
+                85
+            </td>
+        </tr>
+        <tr>
+            <td>
+                S002
+            </td>
+            <td>
+                86
+            </td>
+        </tr>
+        <tr>
+            <td>
+                S003
+            </td>
+            <td>
+                72
+            </td>
+        </tr>
+        <tr>
+            <td>
+                S004
+            </td>
+            <td>
+                89
+            </td>
+        </tr>
+    </table>
+    <br>
+    <h2>Cite in HTML</h2>
+    <p>
+        <q cite="https://www.w3resource.com/html/HTML-tutorials.php">
+            HTML, stands for Hyper Text Markup Language
+        </q>
+    </p>
+    <br>
+    <h2>Column in HTML</h2>
+    <table class="table table-bordered">
+        <colgroup>
+           <col span="3" style="background-color: #cc66Ff;">
+           <!-- We can change span value 2,3,4,5 to specify the number of columns a -->
+           <col style="background-color: #cc66Ff;">
+        </colgroup>
+        <tr>
+            <th>COL-1</th>
+            <th>COL-2</th>
+            <th>COL-3</th>
+        </tr>
+        <tr>
+            <td>MySQL</td>
+            <td>PHP</td>
+            <td>SQL</td>
+        </tr>
+        <tr>
+            <td>MySQL Exercise</td>
+            <td>PHP Exercise</td>
+            <td>SQL Exercise</td>
+        </tr>
+    </table>
+    <br>
+    <h2>Code in HTML</h2>
+    <p>
+        This following text is computer code : <code><?php $x = w34; echo $x; ?></code>.
+    </p>
+    <p>
+        We are learning HTML with  <em title="an online tutorial on web design and development.">w3resource HTML tutorial.</em>
+    </p>
+    <p>
+        This is an example of <strong>HTML strong tag.</strong>
+    </p>
+    <p>
+        This is an example of <samp>HTML samp tag.</samp>
+    </p> 
+    <p>
+        This is an example of <kbd>HTML kbd tag.</kbd>
+    </p>
+    <p>
+        This is an example of <var>HTML var tag.</var>
+    </p>
+    <br>
+    <h2>Datalist in HTML</h2>
+    <input list="Languages" />   
+    <datalist id="Languages"> 
+    <option value="PHP">
+    <option value="ASP">
+    <option value="Python">
+    <option value="Ruby">
+    <option value="Java">
+    </datalist>
+    <br>
+    <h2>Define Description</h2>
+    <dl>
+        <dt>PHP</dt>
+        <dd>Aserver side scripting language.</dd>
+        <dt>JavaScript</dt>
+        <dd>A client side scripting language.</dd>
+    </dl>
+    <br>
+    <h2>Del(Delete) in HTML</h2>
+    <p>
+        <del datetime="2015-06-25T08:15:30+05:30" cite="https://www.w3resource.com/html/HTML-tutorials.php">We are not using HTML 4.01 Transitional DOCTYPE.</del>
+    </p>
+    <p>
+        We are using 
+        <del cite="https://www.w3resource.com/html/HTML-tutorials.php">HTML 4.01</del> <ins cite="https://www.w3resource.com/html/HTML-tutorials.php">XHTML 1.0</ins> for our pages.
+    </p> 
+    <p>
+        We are using <del   datetime="2011-01-05T08:15:30-05:00">HTML   4.01</del>    <ins   datetime="2011-01-05T08:15:30-05:00">XHTML   1.0</ins> for our pages.
+    </p><br>
+    <h2>Details in HTML</h2>  
+    <details>
+        <summary>
+            PHP is a server side scripting language
+        </summary>
+        <p>
+            PHP is a general-purpose server-side scripting language originally designed for web development to produce dynamic web pages. For this purpose, PHP code is embedded into the HTML source document and interpreted by a web server with a PHP processor module, which generates the web page document.
+        </p>
+    </details>
+    <details open>  
+        <summary>
+            PHP is a server side scripting language
+        </summary>  
+        <p>
+            PHP is a general-purpose server-side scripting language originally designed for web development to produce dynamic web pages. For this purpose, PHP code is embedded into the HTML source document and interpreted by a web server with a PHP processor module, which generates the web page document.
+        </p>
+    </details>
+    <p>
+        <strong> Note:</strong>The open attribute is a boolean attribute.
+    </p><br>
+    <h2>Definition in HTML</h2>
+    <p>
+        <dfn>
+            WHO
+        </dfn>
+        Stands for World Health Oraganisation
+    </p><br>
+    <h2>Dialog in HTML</h2>
+    <body>
+        <style>table, th, td {border: 1px solid red;}</style>
+    <body>
+      <table>
+        <tr>
+          <th>March <dialog open>This is an open dialog window</dialog></th>
+          <th>April</th>
+          <th>May</th>
+        </tr>
+        <tr>
+          <td>31</td>
+          <td>30</td>
+          <td>31</td>
+        </tr>
+      </table><br>
+    <h2>Division in HTML</h2>
+    <div>
+        <h1>W3resource Tutorial</h1>
+        <p>This is example of division</p>
+    </div><br>
+    <h2>Description List</h2>
+    <dl> 
+        <dt>PHP</dt>
+        <dd>A server side scripting language.</dd> 
+        <dt>JavaScript</dt>
+        <dd>A client side scripting language.</dd> 
+    </dl><br>
+    <h2>Definition Term in HTML</h2>
+    <dl> 
+        <dt>PHP</dt>
+        <dd>A server side scripting language.</dd> 
+        <dt>JavaScript</dt>
+        <dd>A client side scripting language.</dd> 
+    </dl><br>
+    <h2>Emphasized in HTML</h2>
+    <h1>w3resource Tutorial</h1>
+    <strong><em>HTML CSS Exercise
+    </em></strong><br>
+    <h2>Embed in HTML</h2>
+    <embed type="video/mp4" src="https://www.w3resource.com/w3r_videos/pop.mp4" width="300" height="300">
+    <br>
+    <h2>Fieldset in HTML</h2>
+    <form>
+        <fieldset>
+          Name: <input type="text" size="30" /><br /><br />  
+       Email: <input type="text" size="30" /><br /><br />  
+       Place: <input type="text" size="10" /><br /><br />  
+        </fieldset>
+    </form><br>
+    <form>
+    <fieldset disabled>
+          Name: <input type="text" size="30" /><br /><br />  
+       Email: <input type="text" size="30" /><br /><br />  
+       Place: <input type="text" size="10" /><br /><br />  
+    </fieldset>
+    </form>
+    <form 
+    action="https://www.w3resource.com/html-css-exercise/basic/solution
+    fieldset-form-answer-demo.php" method="post" id="w3r_form">
+        What is your favorite game? <input type="text" name="game"><br>
+        <input type="submit">
+        </form>
+    <fieldset form="w3r_form">
+    <legend>Personal Info:</legend>
+        Name: <input type="text" name="name" /><br /><br />  
+        Email: <input type="text" name="email" /><br /><br />  
+        Place: <input type="text" name="place"/><br /><br />  
+    </fieldset>
+    <form name="w3r_form">
+        <fieldset name="w3resource" >
+         Name: <input type="text"  name="username" size="30"><br /><br />  
+      Email: <input type="text" name="usermail" size="30" /><br /><br />  
+      Place: <input type="text" name="userplace" size="10" /><br /><br /> 
+          <button type="button" onclick="ChangeColor()">Change background color of fieldset</button>
+       </fieldset>
+    </form><br>
+    <h2>Figcaption in HTML</h2>
+    <figure>
+        <img src="https://www.w3resource.com/images/w3logo6.png" alt="w3resource Logo"      
+        width="149" height="52" />
+        <figcaption>Official Logo of W3resource.com</figcaption>  
+    </figure>
+    <br>
+    <h2>Figure in HTML</h2>
+    <figure>
+        <img src="https://www.w3resource.com/images/w3logo6.png" alt="w3resource Logo"   width="149" height="52" />  
+    </figure><br>
+    <h2>Footer in HTML</h2>
+    <article>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae vero amet impedit natus quaerat quasi magnam, accusamus eligendi, beatae nisi incidunt numquam suscipit necessitatibus, laudantium atque mollitia inventore repellat qui?
+        </p>
+    </article>
+    <footer>Copyright 2024-2025.</footer><br>
+    <h2>Form in HTML</h2>
+    <form action="https://www.w3resource.com/html-css-exercise/basic/solution/form-answer-demo.php" method="post">
+        Name: <input type="text" name="name" ><br>
+        Email: <input type="text" name="email"><br>
+        Place: <input type="text" name="place"><br>
+        <input type="submit" value="Submit" / >
+    </form>
+    <form accept-charset="ISO-8859-1" action="https://www.w3resource.com/html-css-exercise/basic/solution/form-answer-demo.php" method="post">
+        Name: <input type="text" name="name" ><br>
+        Email: <input type="text" name="email"><br>
+        Place: <input type="text" name="place"><br>
+        <input type="submit" value="Submit" / >
+    </form>
+    <form action="https://www.w3resource.com/html-css-exercise/basic/solution/form-answer-demo.php" method="post" autocomplete="off">
+        Name: <input type="text" name="name" ><br>
+        Email: <input type="text" name="email"><br>
+        Place: <input type="text" name="place"><br>
+        <input type="submit" >
+    </form>
+    <form action="https://www.w3resource.com/html-css-exercise/basic/solution/form-enctype-answer-demo.php" method="post" enctype="multipart/form-data">
+        Name: <input type="text" name="name"><br>
+         Address: <input type="text" name="add"><br>
+         <input type="submit" value="Submit">
+    </form>
+    <form name="user_info" action="https://www.w3resource.com/html-css-exercise/basic/solution/form-method-answer-demo.php" method="get">
+        Name : <input type="text" name="name"/><br/>
+        email  : <input type="text" name="email"/><br/>
+        <input type="submit" name="submit" value="Submit" />
+    </form>
+    <form name="name_example" action="https://www.w3resource.com/html-css-exercise
+    basic/solution/form-name-answer-demo.php" method="get">
+        Name : <input type="text" name="name"/><br/>
+        <label>Favorite Sports 
+        </label>
+        <select name="favourite_sports" >
+            <option value="Soccer">Soccer</option>
+            <option value="Hockey">Hockey</option>   
+            <option value="Tennis">Tennis</option>   
+            <option value="Golf">Golf</option> 
+        </select><br/>
+        <label>Describe yourself in short :</label><br/>
+        <textarea cols="10" rows="10" name="descrip"></textarea><br/>
+        <button type="submit" name="submit">Submit</button>
+    </form>
+    <form action="https://www.w3resource.com/html-css-exercise/basic/solution/form-novalidate-answer-demo.php" method="get" novalidate>
+        E-mail: <input type="email" 
+        name="user_email" required><input type="submit">
+    </form>
+    <form 
+    action="https://www.w3resource.com/html-css-exercise/basic/solution/form-target-answer-demo.php" 
+    method="get" target="_blank">
+      First name: <input 
+    type="text" name="fname"><br>
+      Last name: <input 
+    type="text" name="lname"><br>
+      <input type="submit" 
+    value="Submit">
+    </form><br>
+    <h2>Heading in HTML</h2>
+    <h1>This is H1 Heading</h1>
+    <h2>This is H2 Heading</h2>
+    <h3>This is H3 Heading</h3>
+    <h4>This is H4 Heading</h4>
+    <h5>This is H5 Heading</h5>
+    <h6>This is H6 Heading</h6>
+    <br>
+    <h2>Head in HTML</h2>
+    <p> We are learning head elements
+    </p><br>
+    <h2>Header in HTML</h2>
+    <header>
+        <h1>Example of HTML5 header element</h1>
+        <p>header element is the head of a new section.
+        It may contain : </p>
+        <ul>
+        <li>h1-h6</li>
+        <li>hggroup</li>
+        <li>Table of content</li>
+        <li>Search Form</li>
+        <li>Logos</li>
+        </ul>
+    </header><br>
+    <h2>HR(Horizontal line) tag in HTML</h2>
+    <h1>HTML5</h1>
+    <p>HTML5 is the fifth revision of HTML, a markup language to present and structure web document.</p>
+    
+    <hr>
+    
+    <h1>PHP</h1>
+    <p>PHP, an acronym for Hypertext Preprocessor, is a widely-used open source general-purpose scripting language.</p><br>
+    <h2>I(italic) tag in HTML</h2>
+    <p>
+        <i>W3resource</i> is very informative and easy to learn tutorial for the beginners</p><br>
+    <h2>iframe in HTML</h2>
+    <iframe src="https://www.youtube.com/embed/-GKBQNxHHXQ?si=fu0K_f_bBbu-Q80J" width="560" height="315" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen >
+    </iframe><br>
+    <h2>Image tag in HTML</h2>
+    <p><img src="https://www.w3resource.com/images/layout.gif" alt="html img tag example" width="200" height="300" longdesc="w3r.txt"></p> 
+    <a href="area.map">  
+        <img src="https://www.w3resource.com/w3r_images/html-area-element.png" alt="area example " width="308" height="190" usemap="#Map">  
+        <map name="Map">  
+        <area shape="rect" coords="8,5,100,77" href="https://www.w3resource.com/mysql/mysql-tutorials.php" target="_blank" alt="mysql tutorial">  
+        <area shape="circle" coords="155,93,59" href="https://www.w3resource.com/php/php-home.php" target="_blank" alt="php tutorial">  
+        <area shape="rect" coords="197,136,306,188" href="https://www.w3resource.com/sql/sql-tutorials.php" alt="sql tutorials">  
+    </map>  
+    <p><img src="https://www.w3resource.com/images/w3resource-logo.png" alt="html img src tag example" width="50%" height="50"></p> 
+    <p>Click on the circle or on one of the shape to watch it closer:</p>
+    <body>  
+    <img src="https://www.w3resource.com/w3r_images/html-area-element.png" alt="area example" width="308" height="190" usemap="#Map">  
+    <map name="Map">  
+    <area shape="rect" coords="8,5,100,77" href="https://www.w3resource.com/mysql/mysql-tutorials.php" target="_blank" alt="mysql tutorial">  
+    <area shape="circle" coords="155,93,59" href="https://www.w3resource.com/php/php-home.php" target="_blank" alt="php tutorial">  
+    <area shape="rect" coords="197,136,306,188" href="https://www.w3resource.com/sql/sql-tutorials.php" alt="sql tutorials">  
+    </map><br>
+    <h2>Input tag in HTML</h2>
+    <form method="POST" 
+    action="https://www.w3resource.com/html-css-
+    exercise/basic/solution/input-accept-
+    demo.php">
+      <input type="file" name="my_image" 
+    accept="image/*">
+      <input type="submit">
+    </form>
+    <form method="POST" action="https://www.w3resource.com/html-css-exercise/basic/solution/input-alt-answer-demo.php" >  
+        Name: <input type="text" name="name" size="30">  
+        <input type="image" src="https://www.w3resource.com/html-css-exercise/basic/solution/input-altimages.jpg" alt="Submit" width="50" height="50">
+    </form><br>
+    <h2>Insert tag in HTML</h2>
+    <p>My favorite play is 
+        <del>football</del> <ins>cricket</ins>!
+    </p>
+    <p>w3resource is a tutorial site.
+        <ins cite="i-answer.html">It is very informative and easy to learn tutorial for the beginners.</ins>
+    </p>
+    <p> The elements and attributes those 
+        usage have been changed in HTML5
+        <ins datetime="2014-02-20T10:30:03Z">(in 
+        comparison with HTML4.01)...</ins>
+    </p><br>
+    <h2>KBD Tag in HTML</h2>
+    <em>It is a emphasized text</em><br>
+    <strong>It is a Strong text 
+    </strong><br>
+    <code>It is a  piece of computer 
+    code</code><br>
+    <samp>Sample output from a computer 
+    program</samp><br>
+    <kbd>Keyboard input</kbd><br>
+    <var>Variable</var><br>
+    <h2>Keygen(Key-pair generator) tag in HTML</h2>
+    <form method="post" 
+    action="https://www.w3resource.com/
+    html-css-
+    exercise/basic/solution/keygen-
+    name -answer-demo.php" >
+      Place: <input type="text" 
+    name="place">
+      Encryption: <keygen name="security" autofocus disabled>
+      <input type="submit">
+    </form>
+    <form  method="post" 
+    action="https://www.w3resource.com/html-
+    css-exercise/basic/solution/keygen-
+    answer-demo.php" id="secureform">
+      Email: <input type="text" name="email">
+      <input type="submit">
+    </form>
+    <p>The keygen field below is outside the 
+    form element, but still part of the 
+    form.</p>
+    Encryption: <keygen name="security" 
+    form="secureform">
+    <form  method="post" action="https://www.w3resource.com/html-css-exercise/basic/solution/keygen-keytype-answer-demo.php"id="secureform">
+        Name: <input type="text" name="name">
+      Encryption: <keygen name="security" keytype="rsa">
+      <input type="submit">
+      <form method="post" action="https://www.w3resource.com/html-css-exercise/basic/solution/keygen-name-demo.php">
+        Address: <input type="text"name="place">
+        Encryption: <keygen name="security">
+        <input type="submit">
+      </form>
+    </form><br>
+    <h2>Label tag in HTML</h2>
+    <p>Click on one of the text labels to 
+        toggle the related control:</p>
+          <form method="post" 
+        action="https://www.w3resource.com/html-
+        css-exercise/basic/solution/label-
+        answer-demo.php">
+          <label for="yes">Yes</label>
+          <input type="radio" name="answer" 
+        value="yes" checked><br>
+          <label for="no">No</label>
+          <input type="radio" name="answer" 
+        value="no"><br><br>
+          <input type="submit" value="Submit">
+    </form>
+    <p>Click on one of the text labels 
+        to toggle the related control:</p>
+          <form method="post" 
+        action="https://www.w3resource.com/
+        html-css-
+        exercise/basic/solution/label-
+        answer-demo.php">
+          <label for="true">True</label>
+          <input type="radio" 
+        name="answer" value="true" 
+        checked><br>
+          <label for="false">False</label>
+          <input type="radio" 
+        name="answer" 
+        value="false"><br><br>
+          <input type="submit" 
+        value="Submit">
+    </form>
+    <p>The label for the first radio button is outside the form, but still a part of the form.
+        Try clicking the text label to toggle the yes radio button.</p>
+        <form method="post"  action="https://www.w3resource.com/html-css-exercise/basic/solution/label-answer-demo.php" id="form1">
+          <input type="radio" name="answer"  value="yes"checked><br>
+          <label for="no">No</label>
+          <input type="radio" name="answer"  value="no"><br><br>
+          <input type="submit" value="Submit">
+        </form>
+        <label for="yes"> 
+        <form="form1">Yes</label><br>
+    <h2>Legend tag in HTML</h2>
+    <form>
+        <fieldset>
+         <legend>Cariculam-vita:</legend>
+         Name:     <input type="text"><br>
+         Address:  <input type="text"><br>
+         Phone No: <input type="text"><br>
+         Email:    <input type="text">
+        </fieldset>
+       </form><br>
+    <h2>LI(List Item) in HTML</h2>
+    <p>An ordered list:</p>
+    <ol>
+        <li>HTML5</li>
+        <li>CSS</li>
+        <li>PHP</li>
+    </ol>
+    <p>An unordered list:</p>
+    <ul>
+        <li>HTML5</li>
+        <li>CSS</li>
+        <li>PHP</li>
+    </ul>
+    <ol>
+        <li value="50">HTML5 Tutorial</li>
+        <li>CSS Tutorial</li>
+        <li>PHP Tutorial</li>
+        <li>JavaScript Tutorial</li>
+        <li>MySQL Tutorial</li>
+        <li>SQL Tutorial</li>
+    </ol>
+    <br>
+    <h2>Link tag in HTML</h2>
+    <link rel="stylesheet" type="text/css" href="link.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <ul>
+        <li>PHP Tutorial</li>
+        <li>JavaScript Tutorial</li>
+        <li>MySQL Tutorial</li>
+    </ul>
+    <link rel="icon" href="//www.w3resource.com/images/favicon.png" type="image/png" sizes="16x16">
+    <h3>Tutorial</h3>
+    <p>Open this page in a <a href="http://localhost/html-css-exercise/basic/solution/exercise-link-size-tag-answer.html" target="_blank">new window</a> to see the favicon.
+    </p><br>
+    <h2>Main tag in HTML</h2>
+    <article>
+        <h1>search engines</h1>
+        <p>Google,Bing, and Yahoo! are the most used search engines today.</p>
+        <h1>Google</h1>
+        <p>The world's most popular search engine. </p>
+        <h1>Bing</h1>
+        <p>Microsoft's entry into the burgeoning search engine market. Better late than never.</p>
+        <h1>Yahoo!</h1>
+        <p>The 2nd largest search engine on the web </p>
+    </article><br>
+    <h2>Map tag in HTML</h2>
+    <img src="https://www.w3resource.com/w3r_images/html-area-element.png" alt="area example" width="308" height="190" border="0" usemap="#Map">  
+    <map name="Map">  
+    <area shape="rect" coords="8,5,100,77" href="https://www.w3resource.com/mysql/mysql-tutorials.php" target="_blank" alt="mysql tutorial" hreflang="en">  
+    <area shape="circle" coords="155,93,59" href="https://www.w3resource.com/php/php-home.php" target="_blank" alt="php tutorial" hreflang="en">  
+    <area shape="rect" coords="197,136,306,188" href="https://www.w3resource.com/sql/sql-tutorials.php" alt="sql tutorials" hreflang="en">
+    </map><br>
+    <h2>Mark tag in HTML</h2>
+    <mark>w3resource</mark>
+    is a web development tutorial.
+    <br>
+    <h2>Menu tag in HTML</h2>
+    <menu>  
+        <li>HTML Lists. </li>  
+        <li>HTML Unordered Lists.</li>  
+        <li>HTML Ordered Lists.</li>  
+        <li>HTML Definition Lists.</li>  
+    </menu><br>
+    <h2>Meter tag in HTML</h2>
+    <p>Display a gauge value here:</p>
+    <meter value="5" min="0" max="20">2 out of 20</meter><br>
+    <meter value="0.6">60%</meter>
+    <p>Display a gauge value here:</p>
+    <p>Harry's score: <meter min="0" low="20" high="80" max="100" value="90"></meter></p>
+    <p>James's score: <meter min="0" low="20" high="80" max="100" value="60"></meter></p>
+    <p>David's score: <meter min="0" low="20" high="80" max="100" value="30"></meter></p>
+    <p>Display a gauge value here:</p>
+    <p>Harry's score: <meter min="0" low="20" high="80" max="100" value="40"></meter></p>
+    <p>James's score: <meter min="0" low="20" high="80" max="100" value="60"></meter></p>
+    <p>David's score: <meter min="0" low="20" high="80" max="100" value="30"></meter></p>
+    <p>Display a gauge:</p>
+    <p>James's score: <meter min="0" low="30" high="90" max="100" value="85"></meter></p>
+    <p>Harry's score: <meter min="0" low="30" high="90" max="100" value="55"></meter></p>
+    <p>David's score: <meter min="0" low="30" high="90" max="100" value="25"></meter></p>
+    <p>Display a gauge value here:</p>
+    <p>Harry's score: <meter min="0" low="30" high="90" max="100" value="95"></meter></p>
+    <p>James's score: <meter min="0" low="30" high="90" max="100" value="65"></meter></p>
+    <p>David's score: <meter min="0" low="30" high="90" max="100" value="35"></meter></p>
+    <p>Display a gauge value here:</p>
+    <p><meter value="0.3" high="0.8" low="0.1" optimum="0.4"></meter></p>
+    <p>Display a gauge value here:</p>
+    <p>Harry's score: <meter min="0" low="20" high="80" max="100" value="90"></meter></p>
+    <p>James's score: <meter min="0" low="20" high="80" max="100" value="60"></meter></p>
+    <p>David's score: <meter min="0" low="20" high="80" max="100" value="30"></meter></p>
+    <br>
+    <h2>Nav tag in HTML</h2>
+    <nav>
+        <a href="https://www.w3resource.com/html5/introduction.php" target="_blank">HTML5</a>|
+        <a href="https://www.w3resource.com/html5-canvas/#:~:text=Officially%20a%20canvas%20is%20%22a,2D%20shapes%20and%20bitmap%20images." target="_blank">HTML5 Canvas</a>|
+        <a href="https://www.w3resource.com/schema.org/introduction.php" target="_blank">Schema.org</a> 
+        |
+        <a 
+        href="https://www.w3resource.com/javascript-exercises/" target="_blank">JavaScript</a>
+    </nav><br>
+    <h2>Noscript in HTML</h2>
+    <script>
+        document.write('W3resource')
+    </script>
+    <noscript>Sorry, your browser does not support JavaScript!</noscript><br>
+    <h2>Object Tag in HTML</h2>
+    Object 
+    <object width="400" height="400" data="https://www.w3resource.com/html-css-exercise/basic/solution/phpdemo1.swf">
+    </object>
+    Object Form
+    <form method="post" 
+    action="https://www.w3resource.com/html-css-
+    exercise/basic/solution/object-from-
+    answer-demo.php">
+     First Name: <input type="text" 
+    name="fname"<br>
+    <input type="submit" value="Submit 
+    form">
+    </form>
+    <br>
+    <object 
+    data="https://www.w3resource.com/html-
+    css-exercise/basic/solution/php-
+    demo1.mp4" width="400" height="400" 
+    name="object1" form="form1"></object><br>
+    Object Type
+    <object data="https://www.w3resource.com/html-css-exercise/basic/solution/php-demo1.mp4" type="video/mp4">
+    </object>
+    <h2>Order list tag in HTML</h2>
+    <ol>
+        <li>Pawan Yadav</li>
+        <li>Pankaj Yadav</li>
+        <li>Meera Devi</li>
+    </ol>
+    <ol start="10">
+        <li>AI Engineer</li>
+        <li>Electronics Engineer</li>
+        <li>HouseWife</li>
+    </ol>
+    <ol reversed>
+        <li>Pawan Yadav</li>
+        <li>Pankaj Yadav</li>
+        <li>Meera Devi</li>
+    </ol>
+    <ol type="I" start="10">
+        <li>Pawan Yadav</li>
+        <li>Pankaj Yadav</li>
+        <li>Meera Devi</li>
+    </ol>
+    <ol type="I">
+        <li>Pawan Yadav</li>
+        <li>Pankaj Yadav</li>
+        <li>Meera Devi</li>
+    </ol><br>
+    <h2>OPT(Option) group Tag in HTML</h2>
+    <select>
+        <optgroup label="Computer Monitors">
+            <option value="crt">CRT</option>
+            <option value="lcd">LCD</option>
+            <option value="led">LED</option>
+        </optgroup>
+        <optgroup label="Computer 
+        Printers">
+        <option value="dot-matrix">Dot- 
+        Matrix</option>
+        <option value="ink-jet">Ink-
+        jet</option>
+        <option value="laser">Laser</option>
+        </optgroup>
+        <optgroup label="Computer 
+        Printers" disabled>
+        <option value="dot-matrix">Dot- 
+        Matrix</option>
+        <option value="ink-jet">Ink-
+        jet</option>
+        <option value="laser">Laser</option>
+        </optgroup>        
+    </select>
+    <form name="Fav_Sport">  
+        <label>Favorite Sports</label>  
+        <select name="favoritesports" id="favoritesports">  
+        <optgroup label="Sports">  
+        <option label="Soccer">Soccer</option>  
+        <option label="Hockey">Hockey</option>  
+        <option label="Tennis">Tennis</option>  
+        <option label="Golf">Golf</option>  
+        </optgroup>  
+    </select><br>
+    <h2>Option tag in HTML</h2>  
+    <select>
+        <option value="php">PHP</option>  
+        <option value="asp">ASP</option>  
+        <option value="ruby" disabled>Ruby on Rails 
+        </option>  
+    </select>
+    <form name="Fav_Sport" >  
+        <label>Favorite Sports</label>  
+        <select name="favoritesports" 
+        id="favoritesports">  
+        <optgroup label="Sports">  
+        <option label="Circket">Soccer</option>  
+        <option label="Hockey">Hockey</option>  
+        <option label="Tennis">Tennis</option>  
+        <option label="Golf">Golf</option>  
+        </optgroup>  
+        </select>  
+    </form>  
+    <form method="post" 
+    action="https://www.w3resource.com/html-css-exercise/basic/solution/input-list-answer-demo.php">
+    <select name="animal">
+         <option value="carnivorous ">Lion</option>
+         <option value="largest cat species">Tiger</option>
+         <option value="large mammals">Elephant</option>
+         <input type="submit">
+    </form><br>
+    <h2>Output tag in HTML</h2>  
+    <form oninput="w3resource.value=parseInt(input.value)+parseInt(output.value)">0
+        <input type="range" id="input" value="100">100+
+        <input type="number" id="output" value="10">=
+        <output name="w3resource" for="input output"></output>
+    </form>
+    <form oninput="second_output.value=parseInt(a.value)+parseInt(b.value)" id="MyForm">
+        <input type="range" name="b" value="50" /> +
+        <input type="number" name="a" value="10" /> =
+    </form>
+    <output form="MyForm" name="second_output" for="x y"></output><br>
+    <h2>Paragraph Tag in HTML</h2>
+    <p>This is a HTML Paragraph!</p>
+    <br>
+    <h2>Parameter tag in HTML</h2>
+    <object data="https://www.w3resource.com/html-css-exercise/basic/solution/beach.wav">
+        <param name="autoplay" value="true">
+    </object><br>
+    <h2>preformatted text tag in HTML</h2>
+    <pre>
+        I am 
+        Pawan 
+             Yadav
+                AI Engineer!
+    </pre><br>
+    <h2>Progress tag in HTML</h2>
+    Downloading Progress:- 
+    <progress value="75" max="100">
+    </progress><br>
+    <h2>Quotation tag in HTML</h2>
+    <p> I am Pawan Yadav. I am <q>AI Engineer! </q></p>
+    <p><q cite="https://www.w3resource.com/html/HTML-tutorials.php">HTML, stands for Hyper Text Markup Language</q>
+    </p><br>
+    <h2>Strikethrough tag in HTML</h2>
+    <p><s>Present version of HTML is HTML 4.01.</s></p>
+    <p>Next version of HTML is HTML 5</p><br>
+    <h2>Script tag in HTML</h2>
+    <p id="output">Click Me</p>
+    <script type="text/javascript">function w3r(){ console.log('This is an example of script element');}   
+    var el = document.getElementById('output');
+    el.addEventListener("click", w3r, false);
+    </script>
+    <p id="output">Click Me</p>
+    <script charset="UTF-8" src="https://www.w3resource.com/html-css-exercise/basic/solution/async-example.js"></script>
+    <script src="https://www.w3resource.com/html-css-exercise/basic/solution/async-example.js" defer></script>
+    <p>The script above requests information from the paragraph below. Normally, this is not possible, because the script is executed before the paragraph exists.</p>
+    <p id="output">Click Me</p><br>
+    <h2>Select tag in HTML</h2>
+    <form name="example" action="html-select-option-optgroup-example.html" >  
+    Select one or more sections:  
+    <select name="languages" multiple>  
+    <optgroup label="Server_side">  
+    <option>PHP</option>  
+    <option>ASP</option>  
+    <option>Ruby on Rails </option>  
+    </optgroup>  
+    <optgroup label="Client_side">  
+    <option>JavaScript</option>  
+    <option>VB Script </option>  
+    </optgroup>  
+    </select>  
+    </form> 
+    <form method="POST" action="https://www.w3resource.com/html-css-exercise/basic/solution/select-form-answer-demo.php" id="form1">
+    First name: <input type="text" name="fname"><br>
+    <input type="submit">
+    </form>
+    <br> 
+    <form name="example" action="html-select-option-optgroup-example.html" >  
+        Select one or more sections:  
+        <select name="languages" autofocus>  
+        <optgroup label="Server_side">  
+        <option>PHP</option>  
+        <option>ASP</option>  
+        <option>Ruby on Rails </option>  
+        </optgroup>  
+        <optgroup label="Client_side">  
+        <option disabled>JavaScript</option>  
+        <option disabled>VB Script </option>  
+        </optgroup>  
+        </select>  
+    </form>  
+    <form method="post" 
+    action="https://www.w3resource.com/htm
+    l-css-exercise/basic/solution/input-
+    list-answer-demo.php">
+    <select size="2" name="animal" multiple>
+    <option value="Lion">Lion</option>
+    <option value="Tiger">Tiger</option>
+    <option 
+    value="Elephant">Elephant</option>
+    </select>  
+    <input type="submit">
+    </form><br>
+    <h2>Small tag in HTML</h2>
+    <p>PAWAN YADAV</p>
+    <p><small>Pawan Yadav AI Engineer</small></p><br>
+    <h2>Source tag in HTML</h2>
+    <video width="320" height="240" controls>
+        <source src="https://www.w3resource.com/html-css-exercise/basic/solution/php-demo1.mp4" type="video/mp4" media="screen and (min-width:320px)">
+        <source src="https://www.w3resource.com/html-css-exercise/basic/solution/php-demo1.ogg" type="video/ogg" media="screen and (min-width:320px)"></video>
+    <audio controls>
+        <source src="https://www.w3resource.com/html-css-exercise/basic/solution/beach.ogg" type="audio/ogg">
+        <source src="https://www.w3resource.com/html-css-exercise/basic/solution/beach.mp3" type="audio/mpeg">
+    </audio><br>
+    <h2>Span tag in HTML</h2>
+    <p> Pawan Yadav<span style="color:red;font-weight:bold"> AI Engineer</span></p>
+    <br>
+    <h2>Strong tag in HTML</h2>
+    <p>I am <strong>PAWAN YADAV</strong> AI Engineer.</p><br>
+    <style>
+        h1 {color:
+        green;}
+        p {color:
+        blue;}
+        </style>
+    <h2>Style tag in HTML</h2>
+    <h1>w3resource</h1>
+    <p>w3resource is a free, open-source 
+    tutorial.</p>
+    <style>
+        h1 {color:
+        #0000CD;}
+        p {color:
+        #FFFFFF;}
+        body {background-color:
+        #6495ED;}
+    </style>
+    <style media="print">
+        h1 {color:
+        #1E90FF;}
+        p {color:
+        #00BFFF;}
+        body {background-color:
+        #00CED1;}
+    </style>
+    <h1>w3resource</h1>
+    <p><a href="http://localhost/html-css-exercise/basic/solution/try-style-media-answer.html" target="_blank">Click here</a> to open this page in a new window (without the tryit part)
+        <title>How to specify that the 
+            styles only apply to this element's 
+            parent element and that element's 
+            child elements</title>
+            <style>
+            h1 {color:sky;}
+            p {color:
+            red;}
+            </style>
+            </head>
+            <body>
+            <div>
+            <style scoped>
+            h1 {color:
+            blue;}
+            p {color:
+            green;}
+            </style>
+            <h1>This heading should be blue</h1>
+            <p>This paragraph should be 
+            green.</p>
+            </div>
+            <h1>This heading should be sky</h1>
+    <p>This paragraph should be red.</p>
+    <style type="text/css">
+        h1 {color:
+        green;}
+        p {color:
+        OrangeRed;}
+        </style>
+        </head>
+        <body>
+        <h1>HTML5 tutorial</h4>
+    <p>I can develop excellent web applications with HTML5 and related APIs in HTML5 tutorial.</p>
+    <br>
+    <h2>SubScript tag in HTML</h2>
+    <p> This text is<sub>Subscript</sub>text.example:- H<sub>2</sub>O </p><br>
+    <h2>Summary Tag in HTML</h2>
+    <details>
+        <summary>w3resource</summary>
+        <p> - w3resource is a free, open-source tutorial.</p>
+        <p>you will learn with HTML5 tutorial of w3resource</p>
+    </details><br> 
+    <h2>SuperScript tag in HTML</h2>
+    <p>This text is<sup> superscript</sup> text. example- a<sup>2</sup>+b<sup>2</sup></p>
+    <br>
+    <h2>Table Tag in HTML</h2>   
+    <table border="1">  
+        <tr>   
+        <th>Student code </th>  
+        <th>% of marks </th>  
+        </tr>  
+        <tr>   
+        <td>S001</td>  
+        <td>85</td>  
+        </tr>  
+        <tr>   
+        <td>S002</td>  
+        <td>86</td>  
+        </tr>  
+        <tr>   
+        <td>S003</td>  
+        <td>72</td>  
+        </tr>  
+        <tr>   
+        <td>S004</td>  
+        <td>89</td>  
+        </tr>  
+    </table><br>
+    <h2>Table body tag in HTML</h2>
+    <style>
+        tbody {color:
+        blue;}
+        table, th, td {
+            border: 1px solid 
+        black;
+        }
+    </style>
+    <table border="1">  
+        <tr>   
+            <th>Student code </th>  
+            <th>% of marks </th>  
+        </tr>  
+        <tr>   
+            <td>S001</td>  
+            <td>85</td>  
+        </tr>  
+        <tr>   
+            <td>S002</td>  
+            <td>86</td>  
+        </tr>  
+        <tr>   
+            <td>S003</td>  
+            <td>72</td>  
+        </tr>  
+        <tr>   
+            <td>S004</td>  
+            <td>89</td>  
+        </tr>  
+    </table>  
+    <br>
+    <h2>Table data tag in HTML</h2>
+    <table border = "1">  
+        <tr>  
+        <th>Type</th>  
+        <th>Description</th>  
+        </tr>  
+        <tr>  
+        <td>PHP</td>  
+        <td>Server side scripting</td>  
+        </tr>  
+        <tr>  
+        <td>JavaScript</td>  
+        <td>Client side scripting</td>  
+        </tr>  
+    </table>  
+    <table border = "1">  
+        <tr>
+        <th>Product Name</th>
+        <th>Rate</th>
+        </tr>
+        <tr>
+        <td>Laptop</td>
+        <td>$250</td>
+        </tr>
+        <tr>
+        <td>Printer</td>
+        <td>$150</td>
+        </tr>
+        <tr>
+        <td colspan="2">Total: $400</td>
+        </tr>
+    </table> 
+    <style>
+        table, th, td {
+        border: 1px solid 
+        black;
+        }
+    </style>
+    <table style="width:100%">
+        <tr>
+            <th id="uid">User Id</th>
+            <th id="name">User Name</th>
+            <th id="address">Address</th>
+            <th id="phone">Phone No</th>
+        </tr>
+        <tr>
+            <td headers="uid">U001</td>
+            <td headers="name">Sudha Chandan</td>
+            <td headers="address">99,J.C.Bose Road,kal-125042</td>
+            <td headers="phone">5612445470</td>
+        </tr>
+    </table>
+    <br>
+    <h2>Textarea tag in HTML</h2> 
+    <textarea rows="4" cols="40">
+        w3resource is a free, open-source 
+        tutorial.you will learn with HTML5 
+        tutorial of w3resource.
+    </textarea>
+    <br>
+    <h2>Table footer tag in HTML</h2>
+    <table border="1">  
+        <thead>  
+        <tr>   
+        <th>Student code </th>  
+        <th>% of marks </th>  
+        </tr>  
+        </thead>  
+        <tfoot>  
+        <tr>  
+        <td>Average</td>  
+        <td>83</td>  
+        </tr>  
+        </tfoot>  
+        <tr>   
+        <td>S001</td>  
+        <td>85</td>  
+        </tr>  
+        <tr>   
+        <td>S002</td>  
+        <td>86</td>  
+        </tr>  
+        <tr>   
+        <td>S003</td>  
+        <td>72</td>  
+        </tr>  
+        <tr>   
+        <td>S004</td>  
+        <td>89</td>  
+        </tr>  
+    </table>
+    <br>
+    <h2>Table column head tag in HTML</h2>
+    <table border="1">  
+        <tr>  
+        <th>Type</th>  
+        <th>Description</th>  
+        </tr>  
+        <tr>  
+        <td>PHP</td>  
+        <td>Server side scripting</td>  
+        </tr>  
+        <tr>  
+        <td>JavaScript</td>  
+        <td>Client side scripting</td>  
+        </tr>  
+    </table>
+    <table border = "1">  
+        <tr>  
+        <th abbr="type">Type of scripting 
+        </th>  
+        <th abbr="Description"> Description of scripting </th>  
+        </tr>  
+        <tr>  
+        <td>PHP</td>  
+        <td>Server side scripting</td>  
+        </tr>  
+        <tr>  
+        <td>JavaScript</td>  
+        <td>Client side scripting</td>  
+        </tr>  
+    </table> 
+    <style>
+        table, th, td {
+        border: 1px solid 
+        black;
+        }
+    </style>    
+    <table>  
+        <tr>  
+        <th colspan="2">Product Cost </th>  
+        </tr>  
+        <tr>  
+        <td>Mobile</td>  
+        <td>$180</td>  
+        </tr>  
+        <tr>  
+        <td>Laptop</td>  
+        <td>$200</td>  
+        </tr>  
+    </table>  
+    <style>
+        table, th, td {
+        border: 1px solid 
+        black;
+        }
+    </style> 
+    <table>  
+        <tr>  
+        <th colspan="3">Product </th>  
+        </tr>  
+        <tr>
+        <th headers="product">Productid</th>  
+        <th headers="product">Productname</th>
+        <th headers="product">Productcost</th>
+        </tr> 
+    </table>
+    <style>
+        table, th, td {
+        border: 1px solid
+        black;
+        }
+    </style> 
+    <table>
+            <tr>
+            <th>Product</th>
+            <th>Rate</th>
+            <th rowspan="4">Product for sale online.</th>
+            </tr>
+            <tr> 
+            <td>Laptop</td>
+            <td>$200</td>
+            </tr>
+            <tr>
+            <td>Mobile</td>
+            <td>$100</td>
+            </tr> 
+            <tr>
+            <td>Plotter(Hp)</td>
+            <td>$120</td>
+            </tr>    
+    </table>    
+    <table width="200" border="1" cellpadding="2">  
+        <tr>  
+        <th scope="col">Student Code </th>  
+        <th scope="col">Percentage of marks</th>  
+        <th scope="col">Grade</th>  
+        <th scope="col">Remarks</th>  
+        <tr>  
+        </tr>  
+        <td>S001</td>  
+        <td>92</td>  
+        <td>A+</td>  
+        <td>Excellent</td>  
+        <tr>  
+        </tr>  
+        <td>S002</td>  
+        <td>76</td>  
+        <td>B+</td>  
+        <td>Good</td>  
+        </tr>  
+    </table>  
+    <br>
+    <h2>Table Header tag in HTML</h2>
+    <table border="1">  
+        <thead>  
+        <tr>  
+        <th>Student code </th>  
+        <th>% of marks </th>  
+        </tr>  
+        </thead>  
+        <tr>  
+        <td>S001</td>  
+        <td>85</td>  
+        </tr>  
+        <tr>  
+        <td>S002</td>  
+        <td>86</td>  
+        </tr>  
+        <tr>  
+        <td>S003</td>  
+        <td>72</td>  
+        </tr>  
+        <tr>  
+        <td>S004</td>  
+        <td>89</td>  
+        </tr>  
+    </table>  
+    <br>
+    <h2>Title tag in HTML</h2>
+    <p>We are leaning HTML at <abbr title="w3resource">w3r</abbr>.</p>
+    <br>
+    <h2>Table row tag in HTML</h2>
+    <style>th {color: 
+        red}
+    </style>
+    <table border = "1">  
+        <tr>  
+        <th>Type</th>  
+        <th>Description</th>  
+        </tr>  
+        <tr>  
+        <td>PHP</td>  
+        <td>Server side scripting</td>  
+        </tr>  
+        <tr>  
+        <td>JavaScript</td>  
+        <td>Client side scripting</td>  
+        </tr>  
+    </table> <br>
+    <h2>Underline tag in HTML</h2>
+    <p>I am PAWAN YADAV <u>An AI Engineer.</u></p>
+    <br>
+    <h2>UnOrdered list tag in HTML</h2>
+    <ul>
+        <li>Tutorials</li>  
+        <li>Online Practice Editor </li>  
+        <li>Examples</li>  
+        <li>References</li>  
+        <li>Videos</li>
+    </ul><br>
+    <h2>Variable tag in HTML</h2>
+    <p>This is an example of <var>HTML var tag.</var></p><br>
+    <h2>Video Tag in HTML</h2>
+    <video width="320" 
+    height="200" controls>
+    <source src="http://www.w3resource.com/html-css-exercise/basic/solution/php-demo1.mp4" type="video/mp4">
+    <source src="http://www.w3resource.com/html-css-exercise/basic/solution/php-demo1.ogg" type="video/ogg">
+    </video>
+    <br>
+    <video width="300" height="250" controls loop>
+        <source src="https://www.w3resource.com/html-css-exercise/basic/solution/php-demo1.mp4" type="video/mp4">
+        <source src="https://www.w3resource.com/html-css-exercise/basic/solution/php-demo1.ogg" type="video/ogg">
+    </video>
+    <br>
+    <video width="300" height="250" controls muted>
+        <source src="https://www.w3resource.com/html-css-exercise/basic/solution/php-demo1.mp4" type="video/mp4">
+        <source src="https://www.w3resource.com/html-css-exercise/basic/solution/php-demo1.ogg" type="video/ogg">
+    </video>
+    <br>
+    <video width="200" height="250" poster="https://www.w3resource.com/images/w3resourcelogo.gif" controls >
+        <source src="https://www.w3resource.com/html-css-exercise/basic/solution/php-demo1.mp4" type="video/mp4">
+        <source src="https://www.w3resource.com/html-css-exercise/basic/solution/php-demo1.ogg" type="video/ogg">
+    </video>
+    <br>
+    <video width="300" height="250" controls preload="auto">  
+        <source src="http://localhost/html-css-exercise/basic/solution/php-demo1.mp4" type="video/mp4">  
+        <source src="https://www.w3resource.com/html-css-exercise/basic/solution/php-demo1.ogg" type="video/ogg">  
+    </video> 
+    <br>
+    <video width="300" hight="250" controls
+    src="https://www.w3resource.com/html-css-exercise/basic/solution/php-demo1.ogg">
+    </video> 
+    <br>
+    <h2>Word Break tag in HTML</h2>
+    <p>wbr element  is a veryveryveryveryveryveryveryveryveryveryvery<wbr>longwordthatwillbreakatspecific<wbr>placeswhenthebrowserwindowisresized.</p>
+    <br>
+    <h1>Completed Exercise in HTML w3resources!</h1>
+    <h2>Pawan Yadav.</h2>
+    <h3>Thank you.</h3>
+</body>
+</html>
